@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h3 id="title">Será que vai chover?</h3>
+      <div class="form-input-container">
+        <input type="text" id="city-input" placeholder="Digite a cidade">
+        <button id="search">
+          <i class="ri-search-line"></i>
+        </button>
+      </div>
+    </div>
+    <div id="weather-data">
+      <h2><i class="ri-map-pin-line"></i>
+        <span id="city">Cidade</span>
+        <!-- <img src="www.bandeirasnacionais.com" alt="Bandeira do país" id="country"> -->
+      </h2>
+      <p id="temperature"><span>38</span>&deg;C</p>
+      <div id="description-container">
+        <p id="description">Nublado</p>
+        <img src="http://openweathermap.org/img/wn/01d.png" alt="Condições do tempo" id="weather-icon">
+      </div>
+      <div id="details-container">
+        <p id="humidity">
+          <i class="ri-drop-line"></i>
+          <span>48%</span>
+        </p>
+        <p id="wind">
+          <i class="ri-windy-line"></i>
+          <span>5km/h</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
